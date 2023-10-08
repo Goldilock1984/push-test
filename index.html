@@ -1,58 +1,89 @@
 <!DOCTYPE html>
-<html lang = "ja">
-    <head>
-    <meta charset="UTF-8">
-    <title>自己紹介</title>
-    <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-      <section>
-      <h1 style="font-size: 20px;">自己紹介の例</h1>
-      <p>はじめまして。ユアスクでがんばると申します。</p>
-      <p>日本に住んでいます。</p>
-      <img src="images/f_f_object_150_s128_f_object_150_1bg.jpg" >
-      <p>おすすめの書籍をおしらせします。</p>
-      <a href="#link1">こちらからどうぞ</a>
-      </section>
-      <section>
-      <h1 id="link1" style="font-size: 20px;">テーブルの例</h1>
-        <table border="1">
-          <tr>
-            <th>書籍名</th>
-            <th>感想</th>
-            <th>リンク</th>
-           </tr>
-          <tr>
-            <td>1冊ですべて身につくHTML&CSSとWebデザイン入門講座</td>
-            <td>わかった気になっても実際にコーディングすると間違えた</td>
-            <td><a href="https://www.amazon.co.jp/1%E5%86%8A%E3%81%A7%E3%81%99%E3%81%B9%E3%81%A6%E8%BA%AB%E3%81%AB%E3%81%A4%E3%81%8FHTML-CSS%E3%81%A8Web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%85%A5%E9%96%80%E8%AC%9B%E5%BA%A7-Mana/dp/4797398892" target="_blank">サイトで確認</a></td>
-          </tr>
-          <tr>
-            <td>Bootstrap5ファーストガイド</td>
-            <td>まだ読んでいない</td>
-            <td><a href="https://www.amazon.co.jp/Bootstrap5%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89-Web%E5%88%B6%E4%BD%9C%E3%81%AE%E6%89%8B%E9%96%93%E3%82%92%E5%A4%A7%E5%B9%85%E3%81%AB%E5%89%8A%E6%B8%9B-%E7%9B%B8%E6%BE%A4%E8%A3%95%E4%BB%8B/dp/4877835229" target="_blank">サイトで確認</a></td>
-          </tr>
-        </table>
-      </section>
-      <section>
-        <h1 style="font-size: 20px;">フォームの例</h1>
-        <form>
-          <dl>
-            <dt>書籍名</dt>
-            <dd>
-              <input type="text">
-            </dd>
-            <dt>感想</dt>
-            <dd>
-              <textarea></textarea>
-            </dd>
-            <dt>リンク</dt>
-            <dd>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>自己紹介</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="index">
+
+  <!-- header begins -->
+  <header>
+  </header>
+  <!-- header ends -->
+
+  <!-- wrap begins -->
+  <section class="profile">
+    <h1>自己紹介の例</h1>
+    <div class="container clearfix">
+      <img src="images/f_f_object_150_s128_f_object_150_1bg.jpg" alt="ユアスクでがんばるの画像" class="profile-image">
+      <div class="profile-text">
+        <h2>自己紹介</h2>
+        <p>はじめまして。ユアスクでがんばると申します。</p>
+        <p>日本に住んでいます。</p>
+        <p>おすすめの書籍をおしらせします。</p>
+        <a class="btn-style-link" href="#link1">おすすめの本はこちらからどうぞ</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h1 id="link1">テーブルの例</h1>
+    <table class="items">
+      <tr>
+        <th>書籍名</th>
+        <th>感想</th>
+        <th>リンク</th>
+      </tr>
+      <tr>
+        <td>1冊ですべて身につくHTML&CSSとWebデザイン入門講座</td>
+        <td>わかった気になっても実際にコーディングすると間違えた</td>
+        <td><a class="btn-style-link"
+            href="https://www.amazon.co.jp/1%E5%86%8A%E3%81%A7%E3%81%99%E3%81%B9%E3%81%A6%E8%BA%AB%E3%81%AB%E3%81%A4%E3%81%8FHTML-CSS%E3%81%A8Web%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E5%85%A5%E9%96%80%E8%AC%9B%E5%BA%A7-Mana/dp/4797398892"
+            target="_blank">サイトで確認</a></td>
+      </tr>
+      <tr>
+        <td>Bootstrap5ファーストガイド</td>
+        <td>まだ読んでいない</td>
+        <td><a class="btn-style-link" 
+            href="https://www.amazon.co.jp/Bootstrap5%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%82%AC%E3%82%A4%E3%83%89-Web%E5%88%B6%E4%BD%9C%E3%81%AE%E6%89%8B%E9%96%93%E3%82%92%E5%A4%A7%E5%B9%85%E3%81%AB%E5%89%8A%E6%B8%9B-%E7%9B%B8%E6%BE%A4%E8%A3%95%E4%BB%8B/dp/4877835229"
+            target="_blank">サイトで確認</a></td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <h1>フォームの例</h1>
+    <div class="form">
+      <form>
+        <dl>
+          <dt>書籍名</dt>
+          <dd>
             <input type="text">
-            </dd>
-          </dl>
-            <button type="submit">登録する</button>
-        </form>
-      </section>
-    </body>
+          </dd>
+          <dt>感想</dt>
+          <dd>
+            <textarea></textarea>
+          </dd>
+          <dt>リンク</dt>
+          <dd>
+            <input type="text">
+          </dd>
+        </dl>
+        <button type="submit" class="btn">登録する</button>
+      </form>
+    </div>
+  </section>
+  <!-- wrap ends -->
+
+  <!-- footer begins -->
+  <footer>
+  </footer>
+  <!-- footer ends -->
+
+</body>
+
 </html>
